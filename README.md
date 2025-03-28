@@ -16,7 +16,7 @@ This project is a web-based presentation that explores social issues observed du
 
 ## Screenshots
 
-_Add screenshots here to showcase the project._
+![image](https://github.com/user-attachments/assets/ac8c8eb0-7035-464b-8c77-df726f4bc2d3)
 
 ## Technologies Used
 
