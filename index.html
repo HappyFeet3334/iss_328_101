@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Event Scroll Presentation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      display: flex;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+      padding: 20px 10px;
+      box-sizing: border-box;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 15px 0;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+    }
+    main {
+      margin-left: 200px;
+      width: calc(100% - 200px);
+    }
+    section {
+      height: auto; /* Allow sections to adjust height based on content */
+      padding: 60px 20px; /* Add padding for spacing */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Align content at the top */
+      align-items: center;
+      box-sizing: border-box;
+    }
+    h1, h2, p {
+      max-width: 800px; /* Limit text width for readability */
+      text-align: center;
+      margin: 20px 0; /* Add spacing between text elements */
+    }
+    img, video {
+      max-width: 90%; /* Ensure images and videos are responsive */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Add rounded corners */
+      margin: 20px 0; /* Add spacing around images and videos */
+      display: block; /* Prevent inline behavior */
+    }
+    .spartan_logo {
+      width: 100px;
+      margin: 20px 0;
+    }
+    @media (max-width: 768px) {
+      nav {
+        width: 100%;
+        height: 80px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+      }
+      nav a {
+        margin: 0;
+      }
+      main {
+        margin-left: 0;
+        width: 100%;
+      }
+      section {
+        height: 100vh;
+        padding: 20px;
+      }
+      .spartan_logo {
+        width: 50px;
+        margin: 0;
+      }
+    }
+    video {
+      max-width: 600px; /* Limit the maximum width of the video */
+      width: 100%; /* Make it responsive */
+      border-radius: 10px; /* Add rounded corners for consistency with images */
+      margin: 20px 0; /* Add spacing around the video */
+      display: block; /* Ensure it doesn't overlap with text */
+    }
+    img {
+      max-width: 600px; /* Limit the maximum width of images */
+      width: 100%; /* Make images responsive */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Add rounded corners */
+      margin: 20px 0; /* Add spacing around images */
+      display: block; /* Prevent inline behavior */
+    }
+    .media-container {
+      display: flex; /* Use flexbox to align items horizontally */
+      flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+      justify-content: center; /* Center the content horizontally */
+      gap: 15px; /* Add spacing between items */
+      margin: 20px 0; /* Add spacing around the container */
+    }
+
+    .media-container img,
+    .media-container video {
+      max-width: 30%; /* Limit the width of each item to 30% of the container */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Add rounded corners */
+      display: block; /* Ensure proper block-level behavior */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img class="spartan_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/1200px-Michigan_State_Athletics_logo.svg.png" alt="spartan_logo">
+    <a href="#title">Title</a>
+    <a href="#issue1">Issue 1</a>
+    <a href="#issue2">Issue 2</a>
+    <a href="#issue3">Issue 3</a>
+    <a href="#reflection">Reflection</a>
+    <a href="#sources">Sources</a>
+  </nav>
+
+  <main>
+    <section id="title">
+      <h1>Game Day: Observations at the Jeff Ishbia Field at McLane Stadium</h1>
+      <h2>By: Tyler Burt</h2>
+      <p>Event: MSU vs Ohio State | Ticket: free with student id | Date: March 21, 2025</p>
+      <img src="imgs/IMG_5464(1).jpg" alt="Photo of you at the game">
+      <video src="imgs/IMG_5458(1).MOV" controls></video>
+      <p>I attended the MSU softball game against Ohio State on 3/21/25. It was a really windy day making it a little colder than I would’ve preferred but the sun shining provided a little warmth that really helped me get through the whole game. The stadium was surprisingly small and they had different rows or classes of seating, one being right behind homebase while the rest of the stadium was mostly bleachers. I observed that two teams were mainly composed of white females, the announcements and corporate sponsorships, and womens softball doesn’t get as much attention as male baseball in the professional world.</p>
+    </section>
+
+    <section id="issue1">
+      <h2>Social Issue 1: Race and ethnicity</h2>
+      <div class="media-container">
+        <img src="imgs/IMG_5473.jpg" alt="MSU players">
+        <img src="imgs/Ohio State players.png" alt="Ohio State players">
+      </div>
+      <p>I noticed that a large majority of the players on both teams were white however in contrast the head coaches of both teams were colored. This foreshadows possible more complex racial dynamic with in sports and leadership in sports.</p>
+      <p>I noticed no forms of racism or disrespect. That is not to say that racism doesn’t exist or impact the sport but it was not present at this game.</p>
+      <p>The stands were similar and had a lot more white spectators, however  halfway through the game more people of color showed up to balance out spector demographic. This is interesting because in contrast a majority of the players were white.</p>
+      <p>In Race and Ethnicity Coakely he talks about how often the field and players may look homogenous, however looking at the leadership positions exposes the deeper racial dynamics in many sports. Showing although the most of the players are white and look the same the fact that the head coaches are both people of color means there might be a more complex racial issue behind the scenes even if it is not observed out right</p>
+    </section>
+
+    <section id="issue2">
+      <h2>Social Issue 2: Class and Corporatism</h2>
+      <div class="media-container">
+        <img src="imgs/IMG_5470.jpg" alt="Expensive concessions">
+        <video src="imgs/IMG_5461.MOV" controls></video>
+        <video src="imgs/IMG_5463.MOV" controls></video>
+      </div>
+      <p>While at the game I noticed a couple of traditions like every time we entered a new inning or the teams would switch from outfield to batting they would have a moment to talk about the sponsors of msu athletics. This only serves to highlight the commercial aspect of the event.</p>
+      <p>I also noticed another interesting tradition was a tee shirt toss where they gave out msu merch and even gift cards to the spectators further showing the commercial and economical asspect of sporting events</p>
+      <p>Interestingly, even foul balls and home runs were sponsored by specific companies, showcasing the pervasive influence of corporate branding.</p>
+      <p>I noticed that when my friend went to get popcorn from the concession stand it was pretty expensive and we couldn’t use our msu combos like at msu football games.</p>
+      <p>I noticed there were also different rows of  seats that were closer to homebase where most of the msu fans were during the game. I don't know however if you needed to pay extra or I just couldn’t find the entrance but it seemed like only family members and friends were sitting there.</p>
+    </section>
+
+    <section id="issue3">
+      <h2>Social Issue 3: Gender</h2>
+      <img src="imgs/IMG_5469.jpg" alt="Cheer squad image">
+      <img src="https://ballornothing14.wordpress.com/wp-content/uploads/2014/10/screen-shot-2014-11-30-at-10-45-55-pm.png" alt="softball vs baseball image">
+      <p>The women’s collegiate softball scene is substantial, yet it lacks the visibility and attention afforded to men’s baseball. This disparity raises questions about societal perceptions of gender in sports.</p>
+      <p>Softball is often stereotyped as a sport exclusively for women, despite the existence of men’s softball teams and leagues. This misconception perpetuates gender biases within the sport.</p>
+      <p>There is also a significant pay gap between professional female softball players in the National Pro Fastpitch (NPF) league and male players in Major League Baseball (MLB). This disparity reflects broader systemic inequalities in professional sports.</p>
+      <p>While no overt sexism or gender-based comments were observed during the game, the limited professional opportunities and low pay for female athletes highlight the challenges they face beyond collegiate sports.</p>
+    </section>
+
+    <section id="reflection">
+      <h2>Does Sport Reflect Society?</h2>
+      <p>Sports mirror society by exposing underlying racial, gender, and economic dynamics. Despite predominantly white players, diverse coaching indicates complex power structures. Extensive sponsorships and costly concessions highlight commercial influences, while the gender disparity in professional opportunities underscores broader inequalities. Overall, the game reflects societal norms and challenges, demonstrating that sport both mirrors and magnifies existing social issues.</p>
+    </section>
+
+    <section id="sources">
+      <h2>Sources</h2>
+      <p>Lopez, J. (2020). *Sport as Political Resistance*. NYU Press, New York.</p>
+      <p>Messner, M. (1992). *Power at Play: Sports and the Problem of Masculinity*. Beacon Press, Boston.</p>
+      <p>Coakley, J. (2017). *Sports in Society: Issues and Controversies*. McGraw-Hill Education, New York.</p>
+      <p>Your Name. (2025, March 10). Personal photo of yourself at the game. Los Angeles, CA.</p>
+      <p>Your Name. (2025, March 10). Personal photo of concession prices. Los Angeles, CA.</p>
+      <p>Your Name. (2025, March 10). Personal photo of BLM jersey. Los Angeles, CA.</p>
+      <p>Your Name. (2025, March 10). Personal photo of cheerleaders. Los Angeles, CA.</p>
+    </section>
+  </main>
+
+  <script>
+    // Optional JS if you want to add transitions or more interactivity later
+  </script>
+</body>   
+</html>
